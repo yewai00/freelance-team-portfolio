@@ -83,7 +83,7 @@ export default function Hero() {
         <div className="absolute top-1/4 left-1/4 h-[300px] w-[300px] rounded-full bg-indigo-200/20 blur-[100px] dark:bg-indigo-500/5 sm:h-[450px] sm:w-[450px]" />
         <div className="absolute bottom-1/4 right-1/4 h-[250px] w-[250px] rounded-full bg-cyan-300/10 blur-[90px] dark:bg-cyan-500/5 sm:h-[400px] sm:w-[400px]" />
         <div 
-          className="absolute inset-0 opacity-[0.02] dark:opacity-[0.03] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" 
+          className="absolute inset-0 opacity-[0.04] dark:opacity-[0.03] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"
         />
       </div>
 
