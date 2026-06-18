@@ -4,11 +4,11 @@ import { Card, CardContent } from '@/src/components/ui/Card';
 
 // Real high-quality professional portrait assets from Unsplash
 const AVATAR_URLS: { [key: string]: string } = {
-  pyae: '/assets/images/v1.jpg',
-  hayman: '/assets/images/v5.jpg',
-  arkar: '/assets/images/v2.jpg',
-  ye: '/assets/images/v3.jpg',
-  shweyee: '/assets/images/v6.jpg'
+  pyae: '/assets/images/v1.png',
+  hayman: '/assets/images/v2.png',
+  arkar: '/assets/images/v5.png',
+  ye: '/assets/images/v6.png',
+  shweyee: '/assets/images/v3.png'
 };
 export default function Team() {
   return (
