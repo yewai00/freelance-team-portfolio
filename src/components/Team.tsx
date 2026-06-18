@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
+import { useState } from 'react';
+import { Github, Linkedin, Mail, ArrowUpRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { TEAM } from '@/src/data/portfolioData';
 import { Card, CardContent } from '@/src/components/ui/Card';
 
@@ -10,7 +11,17 @@ const AVATAR_URLS: { [key: string]: string } = {
   ye: '/assets/images/v6.png',
   shweyee: '/assets/images/v3.png'
 };
+
 export default function Team() {
+  const [expandedBios, setExpandedBios] = useState<Record<string, boolean>>({});
+
+  const toggleBio = (id: string) => {
+    setExpandedBios((prev) => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
+  };
+
   return (
     <section id="team" className="relative py-20 bg-white dark:bg-transparent">
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8">
@@ -67,9 +78,21 @@ export default function Team() {
                     </div>
                   </div>
 
-                  <p className="mt-4 text-xs text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-4 min-h-[64px]">
-                    {member.bio}
-                  </p>
+                  <div className="mt-4">
+                    <p className={`text-xs text-slate-600 dark:text-slate-300 leading-relaxed ${!expandedBios[member.id] ? 'line-clamp-4 min-h-[64px]' : ''}`}>
+                      {member.bio}
+                    </p>
+                    <button 
+                      onClick={() => toggleBio(member.id)}
+                      className="mt-2 flex items-center gap-1 text-[11px] font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
+                    >
+                      {expandedBios[member.id] ? (
+                        <>Show less <ChevronUp className="h-3 w-3" /></>
+                      ) : (
+                        <>Read more <ChevronDown className="h-3 w-3" /></>
+                      )}
+                    </button>
+                  </div>
                 </div>
 
                 {/* Social Connect Handlers - Scaled down for sleek look */}

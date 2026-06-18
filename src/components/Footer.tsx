@@ -39,7 +39,7 @@ export default function Footer() {
               <span>ApexDev</span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-              Active engineering partners designing reliable backends, highly responsive front-ends, and robust multi-cloud container grids.
+              ApexDev is a top-tier freelance engineering team based in Myanmar. We design reliable backends, highly responsive front-ends, and robust mobile applications.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-slate-500 dark:text-slate-400">
               <li>
-                <strong>Global Intake:</strong> apexdev-team@gmail.com
+                <strong>Global Intake:</strong> apexdev.team.mm@gmail.com
               </li>
             </ul>
           </div>

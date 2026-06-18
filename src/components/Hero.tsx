@@ -96,7 +96,7 @@ export default function Hero() {
           className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white/60 px-4 py-1.5 text-xs font-semibold tracking-wide text-slate-800 dark:border-white/10 dark:bg-white/5 dark:text-indigo-200 shadow-sm"
         >
           <ShieldCheck className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-          <span>SECURE BY DESIGN • HIGH CONCURRENCY READY</span>
+          <span>BUILT FAST • SECURE BY DESIGN</span>
         </motion.div>
 
         {/* Master Heading */}
@@ -116,7 +116,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
           className="mx-auto mt-6 max-w-2xl text-base text-slate-600 dark:text-slate-300 sm:text-lg md:text-xl md:leading-relaxed"
         >
-          We are an elite Full-Stack team building modern web applications, scalable backend systems, and robust cloud infrastructure designed for long-term business success.
+          We are an elite freelance software development team based in Myanmar. We build modern web and mobile applications, scalable backend systems, and robust cloud infrastructure designed for long-term business success.
         </motion.p>
 
         {/* Call to Actions (CTAs) */}

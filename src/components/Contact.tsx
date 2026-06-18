@@ -116,7 +116,7 @@ export default function Contact() {
                 Contact Meta & Operations
               </h3>
               <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                Connect directly with our engineering team. We do not use non-technical account managers; you will interface only with senior active partners.
+                Connect directly with our premier freelance engineering team based in Myanmar. We do not use non-technical account managers; you will interface only with senior active partners.
               </p>
 
               {/* Operating Info Handlers */}
@@ -130,7 +130,7 @@ export default function Contact() {
                       Primary Inboxes
                     </h4>
                     <p className="text-sm font-semibold text-slate-900 dark:text-white mt-0.5">
-                      apexdev-team@gmail.com
+                      apexdev.team.mm@gmail.com
                     </p>
                     <p className="text-xs text-slate-500 dark:text-slate-400">
                       Secured using transit-layer TLS
@@ -197,9 +197,27 @@ export default function Contact() {
                   transition={{ duration: 0.25 }}
                   className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm dark:border-white/10 dark:bg-white/5 dark:backdrop-blur-md"
                 >
+                  <div className="flex flex-col items-center justify-center text-center py-16 space-y-6">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 dark:bg-white/5 ring-1 ring-slate-200 dark:ring-white/10">
+                      <Mail className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+                        Direct Inbox Integration Coming Soon
+                      </h3>
+                      <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm mx-auto leading-relaxed">
+                        We are currently upgrading our direct inquiry systems. For swift coordination, please reach out to our active engineering partners directly via email.
+                      </p>
+                    </div>
+                    <a href="mailto:apexdev.team.mm@gmail.com" className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-500 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 dark:focus:ring-offset-slate-900 mt-4">
+                      <Send className="h-4 w-4" />
+                      Email Us Directly
+                    </a>
+                  </div>
+
+                  {/* FUTURE INTEGRATION FORM
                   <form onSubmit={handleSubmit} id="contact-scope-form" className="space-y-6">
                     <div className="grid gap-6 sm:grid-cols-2">
-                      {/* Name input */}
                       <div className="space-y-2">
                         <label className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">
                           Your Name
@@ -227,7 +245,6 @@ export default function Contact() {
                         )}
                       </div>
 
-                      {/* Email input */}
                       <div className="space-y-2">
                         <label className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">
                           Email Address
@@ -256,7 +273,6 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    {/* Scope select */}
                     <div className="space-y-2">
                       <label className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">
                         Project Scope Target
@@ -289,7 +305,6 @@ export default function Contact() {
                       )}
                     </div>
 
-                    {/* Message textarea */}
                     <div className="space-y-2">
                       <label className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">
                         Brief Project Details
@@ -317,7 +332,6 @@ export default function Contact() {
                       )}
                     </div>
 
-                    {/* Submit Button */}
                     <Button
                       id="form-submit-btn"
                       variant="primary"
@@ -338,6 +352,7 @@ export default function Contact() {
                       )}
                     </Button>
                   </form>
+                  */}
                 </motion.div>
               ) : (
                 <motion.div
