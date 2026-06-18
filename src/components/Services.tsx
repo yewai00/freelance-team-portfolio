@@ -22,11 +22,11 @@ export default function Services() {
             Our Specialties
           </h2>
           <p className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl md:text-5xl">
-            SaaS Solutions & Core Architecture
+            Custom Software & Long-Term Partnerships
           </p>
           <div className="mx-auto mt-4 h-1 w-12 rounded bg-indigo-600 dark:bg-indigo-500" />
           <p className="mt-5 text-base text-slate-600 dark:text-slate-400 sm:text-lg">
-            We operate at the intersection of stunning visual craftsmanship and enterprise infrastructure safety. We build to perform under load.
+            We operate at the intersection of high-converting visual craftsmanship and secure cloud infrastructure. We build specialized solutions tailored for long-term business growth.
           </p>
         </div>
 

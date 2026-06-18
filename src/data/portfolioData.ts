@@ -4,43 +4,43 @@ export const SERVICES: Service[] = [
   {
     id: 'frontend',
     title: 'Frontend Engineering & Premium UI/UX',
-    description: 'We craft immersive, lightning-fast client interfaces prioritizing fluid interactions, extreme accessibility, and device responsiveness.',
+    description: 'We craft immersive, lightning-fast client interfaces prioritizing fluid interactions, optimized conversions, and device responsiveness.',
     iconName: 'Layout',
     category: 'frontend',
     features: [
-      'Next.js App Router & Server Components',
-      'Framer Motion micro-animations',
-      'Responsive, multi-theme design structures',
-      '95+ Lighthouse Performance & accessibility scores',
-      'Headless Component Patterns (Radix, Tailwind)'
+      'Professional & high-converting modern design',
+      'Strategic Call-To-Action (CTA) integration',
+      'Responsive, multi-device accessibility',
+      'Lightning-fast page loads for maximum retention',
+      'Refined UI/UX for scalable web applications'
     ]
   },
   {
     id: 'backend',
-    title: 'Enterprise Backend & Distributed Architecture',
-    description: 'We construct secure, thread-safe, and self-healing systems prepared to handle high-concurrency transactions and structured business flows.',
+    title: 'Backend Systems & Content Architecture',
+    description: 'We build scalable architectures to power custom business requirements, including easy-to-manage content systems and enterprise data flows.',
     iconName: 'Cpu',
     category: 'backend',
     features: [
-      'Enterprise Java, Spring Boot & Hibernate',
-      'Secure, auto-documented GraphQL & REST APIs',
-      'Event-Driven Systems (Kafka, RabbitMQ)',
-      'Thread-safe microservice communication patterns',
-      'Transactional safety & ACID-compliant schemas'
+      'Dedicated business & service area showcases',
+      'Easy-to-manage custom blog engines & CMS',
+      'Secure, thread-safe full-stack implementations',
+      'High-performance content architectures',
+      'Structured categorization and data management'
     ]
   },
   {
     id: 'infrastructure',
-    title: 'Cloud Infrastructure & High-Availability Pipelines',
-    description: 'We automate deployments, provision auto-scaling environments, and optimize slow databases to withstand sudden traffic surges.',
+    title: 'Cloud Infrastructure & Long-Term Support',
+    description: 'Beyond the initial build, our full-stack team acts as your dedicated technology partner, providing continuous proactive maintenance and scalable cloud infrastructure.',
     iconName: 'Cloud',
     category: 'infrastructure',
     features: [
-      'CI/CD Orchestration (GitHub Actions, GitLab)',
-      'Containerization (Docker, Kubernetes/K8s)',
-      'Multi-cloud deployments (AWS, GCP, Cloud Run)',
-      'PostgreSQL & Redis caching cluster optimization',
-      'Zero-Downtime rollouts and resilient backups'
+      'Continuous feature updates and enhancements',
+      'Long-term post-launch technical support',
+      'High-availability infrastructure monitoring',
+      'Zero-downtime rollouts and resilient backups',
+      'Proven engineering collaboration & communication'
     ]
   }
 ];

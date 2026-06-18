@@ -6,8 +6,8 @@ import AnimatedCounter from './AnimatedCounter';
 import { TEAM } from '../data/portfolioData';
 
 function TypingHeading() {
-  const part1 = "We engineer production-ready ";
-  const part2 = "software at scale.";
+  const part1 = "We engineer scalable full-stack ";
+  const part2 = "software solutions.";
   const totalLength = part1.length + part2.length;
   const [typedCount, setTypedCount] = useState(0);
 
@@ -116,7 +116,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
           className="mx-auto mt-6 max-w-2xl text-base text-slate-600 dark:text-slate-300 sm:text-lg md:text-xl md:leading-relaxed"
         >
-          We are an elite team of developers building lightning-fast React interfaces, stable microservice platforms, and robust cloud pipelines designed to handle heavy industrial transaction volumes.
+          We are an elite Full-Stack team building modern web applications, scalable backend systems, and robust cloud infrastructure designed for long-term business success.
         </motion.p>
 
         {/* Call to Actions (CTAs) */}

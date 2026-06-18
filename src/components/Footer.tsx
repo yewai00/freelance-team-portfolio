@@ -36,7 +36,7 @@ export default function Footer() {
               <span className="flex h-7 w-7 items-center justify-center rounded-md bg-indigo-600 text-white text-xs dark:bg-indigo-600 dark:text-white font-mono uppercase">
                 A
               </span>
-              <span>Apex Studio</span>
+              <span>ApexDev</span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
               Active engineering partners designing reliable backends, highly responsive front-ends, and robust multi-cloud container grids.
@@ -137,7 +137,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 border-t border-slate-200/60 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 dark:border-white/5 text-[10px] text-slate-400 dark:text-slate-500">
           <p>
-            &copy; {currentYear} Apex Studio Engineering Co. All rights reserved.
+            &copy; {currentYear} ApexDev Team. All rights reserved.
           </p>
         </div>
       </div>
