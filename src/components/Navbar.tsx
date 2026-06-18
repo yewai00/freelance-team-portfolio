@@ -27,11 +27,10 @@ export default function Navbar() {
       setScrolled(window.scrollY > 20);
 
       // Scroll spy logic
-      const sections = NAV_ITEMS.map(item => document.querySelector(item.href));
       const scrollPosition = window.scrollY + 120; // offset for navbar height
-
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
+      
+      for (let i = NAV_ITEMS.length - 1; i >= 0; i--) {
+        const section = document.getElementById(NAV_ITEMS[i].href.slice(1));
         if (section) {
           const rect = section.getBoundingClientRect();
           const top = rect.top + window.scrollY;
@@ -51,25 +50,25 @@ export default function Navbar() {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    setIsOpen(false);
     
-    if (href === '#hero') {
-      window.dispatchEvent(new CustomEvent('reset-hero-counters'));
-    }
 
-    const targetElement = document.querySelector(href);
-    if (targetElement) {
-      const offset = 80; // navbar height
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = targetElement.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+    // Close the mobile menu immediately to prevent visual clutter and layout delay during scroll
+    setIsOpen(false);
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    }
+    // Short timeout to decouple scroll triggering from the active touch/render-cycle 
+    // This prevents mobile browsers (especially Safari/Chrome on iOS) from canceling/halting 
+    // the smooth scroll transition due to drawer height/layout shift.
+    setTimeout(() => {
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        // scrollIntoView natively respects our `scroll-padding-top: 80px` in CSS,
+        // offering native-level buttery smooth scrolling on mobile viewports.
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 50);
   };
 
   return (
@@ -89,10 +88,10 @@ export default function Navbar() {
           className="flex items-center gap-2 font-sans text-xl font-bold tracking-tight text-slate-900 dark:text-white"
           id="nav-logo"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-650 text-white shadow-md dark:bg-indigo-600 dark:text-white">
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 text-white shadow-md dark:bg-indigo-600 dark:text-white">
             A
           </span>
-          <span>Apex <span className="text-indigo-600 dark:text-indigo-455">Dev</span></span>
+          <span>Apex <span className="text-indigo-600 dark:text-indigo-400">Dev</span></span>
         </a>
 
         {/* Desktop Navigation Links */}
@@ -107,7 +106,7 @@ export default function Navbar() {
                 className={`relative px-4 py-2 text-sm font-medium transition-colors rounded-full ${
                   isActive
                     ? 'text-indigo-600 dark:text-indigo-400 font-semibold'
-                    : 'text-slate-650 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white'
+                    : 'text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white'
                 }`}
               >
                 {isActive && (
@@ -215,7 +214,7 @@ export default function Navbar() {
                     className={`block py-3 px-4 text-base font-medium rounded-lg transition-colors ${
                       isActive
                         ? 'bg-indigo-50 text-indigo-600 dark:bg-white/5 dark:text-indigo-400'
-                        : 'text-slate-600 hover:bg-slate-50 dark:text-slate-350 dark:hover:bg-slate-900/60'
+                        : 'text-slate-600 hover:bg-slate-50 dark:text-slate-300 dark:hover:bg-slate-900/60'
                     }`}
                   >
                     {item.label}

@@ -24,28 +24,28 @@ export default function WhyChooseUs() {
         {/* Corporate Pillars Info */}
         <div className="mt-16 grid gap-8 md:grid-cols-3" id="standards-pillars">
           <Card id="standard-secure" className="p-8 flex flex-col items-start gap-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-450">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-400">
               <ShieldCheck className="h-6 w-6" />
             </div>
             <div>
               <h3 className="font-sans text-xl font-bold text-slate-900 dark:text-white">
                 Secure by Design
               </h3>
-              <p className="mt-3 text-sm text-slate-600 dark:text-slate-350 leading-relaxed">
+              <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                 Zero-trust authentication, parameterized inputs, column-level security structures, and protected secret containers come standard. We build compliance guidelines (HIPAA/GDPR) into our systems from day one.
               </p>
             </div>
           </Card>
 
           <Card id="standard-review" className="p-8 flex flex-col items-start gap-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-450">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-400">
               <GitMerge className="h-6 w-6" />
             </div>
             <div>
               <h3 className="font-sans text-xl font-bold text-slate-900 dark:text-white">
                 Double-Engineer Code Review
               </h3>
-              <p className="mt-3 text-sm text-slate-600 dark:text-slate-350 leading-relaxed">
+              <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                 No single partner merges untracked code. We enforce custom ESLint configurations, 85%+ testing coverage rules, and collaborative double-signoff reviews for all core build modules.
               </p>
             </div>
@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
               <h3 className="font-sans text-xl font-bold text-slate-900 dark:text-white">
                 Architectural Transparency
               </h3>
-              <p className="mt-3 text-sm text-slate-600 dark:text-slate-350 leading-relaxed">
+              <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                 We avoid abstract dependency nesting or complex layered pipelines that hide memory leak sources. Our architectures are tidy, fully decoupled, and completely documented for easy long-term support.
               </p>
             </div>

@@ -19,7 +19,7 @@ export default function Button({
   className = '',
   ...props
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all focus-all duration-250 cursor-pointer disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] outline-none';
+  const baseStyles = 'inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 cursor-pointer disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] outline-none';
   
   const variants = {
     primary: 'bg-indigo-600 text-white shadow-lg shadow-indigo-500/10 hover:bg-indigo-500 hover:shadow-indigo-500/20 dark:bg-indigo-600 dark:text-white dark:hover:bg-indigo-500 dark:shadow-indigo-500/30 font-semibold border border-transparent',

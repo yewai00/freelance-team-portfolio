@@ -121,11 +121,11 @@ export default function Contact() {
               {/* Operating Info Handlers */}
               <div className="space-y-5 mt-8">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-650 dark:bg-white/5 dark:text-indigo-400">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-600 dark:bg-white/5 dark:text-indigo-400">
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-450 dark:text-slate-400">
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-400">
                       Primary Inboxes
                     </h4>
                     <p className="text-sm font-semibold text-slate-900 dark:text-white mt-0.5">
@@ -138,11 +138,11 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-650 dark:bg-white/5 dark:text-indigo-400">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-600 dark:bg-white/5 dark:text-indigo-400">
                     <Clock className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-450 dark:text-slate-400">
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-400">
                       Standard Core Hours
                     </h4>
                     <p className="text-sm font-semibold text-slate-900 dark:text-white mt-0.5">
@@ -155,11 +155,11 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-650 dark:bg-white/5 dark:text-indigo-400">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-600 dark:bg-white/5 dark:text-indigo-400">
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-450 dark:text-slate-400">
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-400">
                       Operational Nodes
                     </h4>
                     <p className="text-sm font-semibold text-slate-900 dark:text-white mt-0.5">
@@ -355,7 +355,7 @@ export default function Contact() {
                     Briefing Handshake Completed!
                   </h3>
                   
-                  <p className="mt-4 text-sm text-slate-600 dark:text-slate-305 leading-relaxed max-w-lg mx-auto">
+                  <p className="mt-4 text-sm text-slate-600 dark:text-slate-300 leading-relaxed max-w-lg mx-auto">
                     Thank you, <strong className="text-slate-900 dark:text-indigo-400">{submittedData.name}</strong>. Your project context has been logged securely.
                   </p>
 
@@ -374,7 +374,7 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <p className="mt-6 text-xs text-slate-550 dark:text-slate-450">
+                  <p className="mt-6 text-xs text-slate-500 dark:text-slate-400">
                     An active partner is analyzing your system constraints now. You will receive an email checklist summary within 2 operating hours.
                   </p>
 

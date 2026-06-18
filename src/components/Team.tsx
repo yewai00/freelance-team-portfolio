@@ -61,19 +61,19 @@ export default function Team() {
                           Active
                         </span>
                       </div>
-                      <p className="text-[11px] font-semibold text-slate-505 dark:text-slate-400 truncate mt-0.5">
+                      <p className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 truncate mt-0.5">
                         {member.role}
                       </p>
                     </div>
                   </div>
 
-                  <p className="mt-4 text-xs text-slate-600 dark:text-slate-350 leading-relaxed line-clamp-4 min-h-[64px]">
+                  <p className="mt-4 text-xs text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-4 min-h-[64px]">
                     {member.bio}
                   </p>
                 </div>
 
                 {/* Social Connect Handlers - Scaled down for sleek look */}
-                <div className="mt-5 flex items-center justify-between border-t border-slate-150/80 dark:border-white/5 pt-4">
+                <div className="mt-5 flex items-center justify-between border-t border-slate-200/80 dark:border-white/5 pt-4">
                   <div className="flex items-center gap-2" id={`team-socials-${member.id}`}>
                     {member.github && (
                       <a

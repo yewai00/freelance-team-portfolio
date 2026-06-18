@@ -1,6 +1,6 @@
 {
-  "name": "Freelance Team Portfolio",
-  "description": "Freelance Dev Team",
+  "name": "ApexDev Team",
+  "description": "A premium, dark-and-light-toggle portfolio and landing page for an elite freelance development team, built using React, Tailwind CSS, and Framer Motion.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["Apex Dev"]
+  "majorCapabilities": ["ApexDev Team"]
 }

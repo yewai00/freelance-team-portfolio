@@ -38,26 +38,26 @@ export default function Services() {
               <Card id={`service-card-${service.id}`} key={service.id} className="group flex flex-col justify-between">
                 <div>
                   <CardHeader className="flex items-start gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 text-slate-900 transition-all duration-300 group-hover:bg-indigo-650 group-hover:text-white dark:bg-indigo-950/40 dark:text-indigo-400 dark:group-hover:bg-indigo-600 dark:group-hover:text-white">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 text-slate-900 transition-all duration-300 group-hover:bg-indigo-600 group-hover:text-white dark:bg-indigo-950/40 dark:text-indigo-400 dark:group-hover:bg-indigo-600 dark:group-hover:text-white">
                       <IconComponent className="h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="font-sans text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                         {service.title}
                       </h3>
-                      <span className="mt-1 inline-block rounded-full bg-slate-100/85 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-slate-650 dark:bg-white/5 dark:text-slate-400">
+                      <span className="mt-1 inline-block rounded-full bg-slate-100/85 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-slate-600 dark:bg-white/5 dark:text-slate-400">
                         {service.category}
                       </span>
                     </div>
                   </CardHeader>
 
                   <CardContent className="mt-4">
-                    <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-350">
+                    <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                       {service.description}
                     </p>
 
                     <div className="mt-6 border-t border-slate-100 dark:border-white/5 pt-6">
-                      <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-450 dark:text-slate-400 mb-4">
+                      <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-400 mb-4">
                         Core Capabilities
                       </h4>
                       <ul className="space-y-3" id={`service-features-${service.id}`}>

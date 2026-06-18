@@ -7,10 +7,6 @@ export default function Footer() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     
-    if (href === '#hero') {
-      window.dispatchEvent(new CustomEvent('reset-hero-counters'));
-    }
-
     const targetElement = document.querySelector(href);
     if (targetElement) {
       const offset = 80;
@@ -36,7 +32,7 @@ export default function Footer() {
           
           {/* Column 1: Brand & Desc */}
           <div className="md:col-span-1 space-y-4">
-            <div className="flex items-center gap-2 font-sans text-lg font-bold tracking-tight text-slate-920 dark:text-white">
+            <div className="flex items-center gap-2 font-sans text-lg font-bold tracking-tight text-slate-900 dark:text-white">
               <span className="flex h-7 w-7 items-center justify-center rounded-md bg-indigo-600 text-white text-xs dark:bg-indigo-600 dark:text-white font-mono uppercase">
                 A
               </span>
@@ -116,7 +112,7 @@ export default function Footer() {
               Source & Standards
             </h4>
             <div className="space-y-3 text-xs">
-              <p className="text-slate-500 dark:text-slate-450 leading-relaxed">
+              <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
                 Code produced is highly annotated, structured modularly, and ready for deployment to any scalable Next.js or cloud system.
               </p>
               <div className="flex items-center gap-3">
@@ -143,14 +139,6 @@ export default function Footer() {
           <p>
             &copy; {currentYear} Apex Studio Engineering Co. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1">
-              <FileCode className="h-3.5 w-3.5" />
-              Next.js 15 App Router Compatible
-            </span>
-            <span>&bull;</span>
-            <span>MIT License</span>
-          </div>
         </div>
       </div>
     </footer>
