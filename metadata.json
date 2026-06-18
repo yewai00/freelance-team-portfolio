@@ -1,6 +1,6 @@
 {
-  "name": "ApexDev Team",
+  "name": "VeloceDev Team",
   "description": "A premium, dark-and-light-toggle portfolio and landing page for an elite freelance development team in Myanmar, built using React, Tailwind CSS, and Framer Motion.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["ApexDev Team"]
+  "majorCapabilities": ["VeloceDev Team", "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

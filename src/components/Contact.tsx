@@ -130,7 +130,7 @@ export default function Contact() {
                       Primary Inboxes
                     </h4>
                     <p className="text-sm font-semibold text-slate-900 dark:text-white mt-0.5">
-                      apexdev.team.mm@gmail.com
+                      velocedev.team@gmail.com
                     </p>
                     <p className="text-xs text-slate-500 dark:text-slate-400">
                       Secured using transit-layer TLS
@@ -209,7 +209,7 @@ export default function Contact() {
                         We are currently upgrading our direct inquiry systems. For swift coordination, please reach out to our active engineering partners directly via email.
                       </p>
                     </div>
-                    <a href="mailto:apexdev.team.mm@gmail.com" className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-500 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 dark:focus:ring-offset-slate-900 mt-4">
+                    <a href="mailto:velocedev.team@gmail.com" className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-500 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 dark:focus:ring-offset-slate-900 mt-4">
                       <Send className="h-4 w-4" />
                       Email Us Directly
                     </a>

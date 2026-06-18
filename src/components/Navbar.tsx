@@ -89,9 +89,9 @@ export default function Navbar() {
           id="nav-logo"
         >
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 text-white shadow-md dark:bg-indigo-600 dark:text-white">
-            A
+            V
           </span>
-          <span>Apex <span className="text-indigo-600 dark:text-indigo-400">Dev</span></span>
+          <span>Veloce <span className="text-indigo-600 dark:text-indigo-400">Dev</span></span>
         </a>
 
         {/* Desktop Navigation Links */}

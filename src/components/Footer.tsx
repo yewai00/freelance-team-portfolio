@@ -34,12 +34,12 @@ export default function Footer() {
           <div className="md:col-span-1 space-y-4">
             <div className="flex items-center gap-2 font-sans text-lg font-bold tracking-tight text-slate-900 dark:text-white">
               <span className="flex h-7 w-7 items-center justify-center rounded-md bg-indigo-600 text-white text-xs dark:bg-indigo-600 dark:text-white font-mono uppercase">
-                A
+                V
               </span>
-              <span>ApexDev</span>
+              <span>VeloceDev</span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-              ApexDev is a top-tier freelance engineering team based in Myanmar. We design reliable backends, highly responsive front-ends, and robust mobile applications.
+              VeloceDev is a top-tier freelance engineering team based in Myanmar. We design reliable backends, highly responsive front-ends, and robust mobile applications.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-slate-500 dark:text-slate-400">
               <li>
-                <strong>Global Intake:</strong> apexdev.team.mm@gmail.com
+                <strong>Global Intake:</strong> velocedev.team@gmail.com
               </li>
             </ul>
           </div>
@@ -131,7 +131,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 border-t border-slate-200/60 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 dark:border-white/5 text-[10px] text-slate-400 dark:text-slate-500">
           <p>
-            &copy; {currentYear} ApexDev Team. All rights reserved.
+            &copy; {currentYear} VeloceDev Team. All rights reserved.
           </p>
         </div>
       </div>
