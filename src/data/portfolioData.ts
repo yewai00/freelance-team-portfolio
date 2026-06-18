@@ -54,7 +54,7 @@ export const TEAM: TeamMember[] = [
     bio: 'Specialist in robust Spring Boot backends and dynamic Angular frontends. With 3 years of experience, Pyae engineers secure, high-transaction systems tailored for the fintech industry. He bridges the gap between complex data and user experience to deliver seamless e-commerce platforms.',
     github: 'https://github.com/PyaeSone99',
     linkedin: 'https://linkedin.com',
-    email: 'alex@devteam.io',
+    email: 'yewai.cs@gmail.com',
     avatarSeed: 'pyae'
   },
   {
