@@ -1,13 +1,13 @@
-import { ThemeProvider } from './components/ThemeProvider';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Team from './components/Team';
-import ProjectShowcase from './components/ProjectShowcase';
-import WhyChooseUs from './components/WhyChooseUs';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import AbstractBackground from './components/AbstractBackground';
+import { ThemeProvider } from '@/src/components/ThemeProvider';
+import Navbar from '@/src/components/Navbar';
+import Hero from '@/src/components/Hero';
+import Services from '@/src/components/Services';
+import Team from '@/src/components/Team';
+import ProjectShowcase from '@/src/components/ProjectShowcase';
+import WhyChooseUs from '@/src/components/WhyChooseUs';
+import Contact from '@/src/components/Contact';
+import Footer from '@/src/components/Footer';
+import AbstractBackground from '@/src/components/AbstractBackground';
 
 export default function App() {
   return (

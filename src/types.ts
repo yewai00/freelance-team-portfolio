@@ -32,5 +32,5 @@ export interface Project {
 
 export interface TechIcon {
   name: string;
-  category: 'frontend' | 'backend' | 'cloud' | 'tool';
+  category: 'frontend' | 'backend' | 'cloud' | 'tool' | 'mobile';
 }

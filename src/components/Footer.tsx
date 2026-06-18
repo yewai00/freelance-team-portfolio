@@ -95,13 +95,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-slate-500 dark:text-slate-400">
               <li>
-                <strong>Global Intake:</strong> intake@apex-studios.io
-              </li>
-              <li>
-                <strong>Office coordinates:</strong> UTC, EST, CET channels
-              </li>
-              <li>
-                <strong>Availability:</strong> Monday &ndash; Friday, 2hr reply SLA
+                <strong>Global Intake:</strong> apexdev-team@gmail.com
               </li>
             </ul>
           </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Send, CheckCircle2, AlertTriangle, Loader2, Mail, Clock, MapPin } from 'lucide-react';
-import Button from './ui/Button';
+import Button from '@/src/components/ui/Button';
 
 interface FormData {
   name: string;
@@ -30,11 +30,12 @@ export default function Contact() {
   const [submittedData, setSubmittedData] = useState<FormData | null>(null);
 
   const scopeOptions = [
-    { value: 'frontend', label: 'Frontend SaaS development (React/Next.js)' },
-    { value: 'backend', label: 'Distributed Backend system (Spring Boot/Java)' },
+    { value: 'frontend', label: 'Frontend SaaS development' },
+    { value: 'backend', label: 'Distributed Backend system' },
     { value: 'infrastructure', label: 'Kubernetes deployment & Cloud Setup' },
     { value: 'fullstack', label: 'End-to-End Headless Application' },
     { value: 'consulting', label: 'Architecture & System Optimization audit' },
+    { value: 'others', label: 'Others'}
   ];
 
   const handleInputChange = (
@@ -101,7 +102,7 @@ export default function Contact() {
           </p>
           <div className="mx-auto mt-4 h-1 w-12 rounded bg-indigo-600 dark:bg-indigo-500" />
           <p className="mt-5 text-base text-slate-600 dark:text-slate-400 sm:text-lg">
-            Let us know what structural problems you are looking to solve. We review briefs and reply with detailed architectural options within 2 operating hours.
+            Let us know what structural problems you are looking to solve. We review briefs and reply with detailed architectural options.
           </p>
         </div>
 
@@ -129,7 +130,7 @@ export default function Contact() {
                       Primary Inboxes
                     </h4>
                     <p className="text-sm font-semibold text-slate-900 dark:text-white mt-0.5">
-                      intake@apex-studios.io
+                      apexdev-team@gmail.com
                     </p>
                     <p className="text-xs text-slate-500 dark:text-slate-400">
                       Secured using transit-layer TLS
@@ -146,10 +147,10 @@ export default function Contact() {
                       Standard Core Hours
                     </h4>
                     <p className="text-sm font-semibold text-slate-900 dark:text-white mt-0.5">
-                      08:00 - 18:00 UTC / EST / CET
+                      Flexible Hours
                     </p>
                     <p className="text-xs text-slate-500 dark:text-slate-400">
-                      Monday through Friday (Dev Shifts Active)
+                      Flexible Days
                     </p>
                   </div>
                 </div>
@@ -166,7 +167,7 @@ export default function Contact() {
                       Distributed Remote Co-locations
                     </p>
                     <p className="text-xs text-slate-500 dark:text-slate-400">
-                      Austin, TX &bull; Frankfurt, DE &bull; Zug, CH
+                      Myanmar &bull; Vietnam &bull; Thailand
                     </p>
                   </div>
                 </div>
@@ -375,7 +376,7 @@ export default function Contact() {
                   </div>
 
                   <p className="mt-6 text-xs text-slate-500 dark:text-slate-400">
-                    An active partner is analyzing your system constraints now. You will receive an email checklist summary within 2 operating hours.
+                    An active partner is analyzing your system constraints now. You will receive an email checklist summary within 1 week.
                   </p>
 
                   <Button

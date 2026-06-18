@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sun, Moon, Menu, X, Terminal } from 'lucide-react';
-import { useTheme } from './ThemeProvider';
-import Button from './ui/Button';
+import { useTheme } from '@/src/components/ThemeProvider';
+import Button from '@/src/components/ui/Button';
 
 // Navigation links matching our section IDs
 const NAV_ITEMS = [

@@ -1,6 +1,6 @@
 import { ShieldCheck, HardHat, GitMerge, Zap, Sparkles } from 'lucide-react';
-import { TECH_STACK } from '../data/portfolioData';
-import { Card } from './ui/Card';
+import { TECH_STACK } from '@/src/data/portfolioData';
+import { Card } from '@/src/components/ui/Card';
 
 export default function WhyChooseUs() {
   return (

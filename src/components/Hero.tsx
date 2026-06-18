@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { ArrowUpRight, ShieldCheck, Cpu, Code } from 'lucide-react';
-import Button from './ui/Button';
-import AnimatedCounter from './AnimatedCounter';
-import { TEAM } from '../data/portfolioData';
+import Button from '@/src/components/ui/Button';
+import AnimatedCounter from '@/src/components/AnimatedCounter';
+import { TEAM } from '@/src/data/portfolioData';
 
 function TypingHeading() {
   const part1 = "We engineer scalable full-stack ";
@@ -166,13 +166,13 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Metric 2: API Latency */}
+          {/* Metric 2: Customer Satisfaction */}
           <div className="flex flex-col items-center border-t border-slate-200/80 pt-6 dark:border-white/5 sm:border-t-0 sm:border-l sm:pt-2 sm:pl-2 text-center">
             <span className="font-mono text-3xl font-extrabold text-indigo-600 dark:text-indigo-400 md:text-4xl">
-              <AnimatedCounter value={25} decimals={0} prefix="<" suffix="ms" />
+              <AnimatedCounter value={100} decimals={0} suffix="%" />
             </span>
             <span className="mt-1.5 text-xs font-semibold text-slate-500 dark:text-slate-400">
-              Average API Latency Built
+              Customer Satisfaction Rate
             </span>
           </div>
 

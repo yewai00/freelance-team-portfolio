@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { PROJECTS } from '../data/portfolioData';
-import { Project } from '../types';
-import { Card, CardContent } from './ui/Card';
+import { PROJECTS } from '@/src/data/portfolioData';
+import { Project } from '@/src/types';
+import { Card, CardContent } from '@/src/components/ui/Card';
 import { Check, Code2, Plus, Sparkles, ChevronDown, ChevronUp, BarChart3 } from 'lucide-react';
-import Button from './ui/Button';
+import Button from '@/src/components/ui/Button';
 
 export default function ProjectShowcase() {
   const [activeCategory, setActiveCategory] = useState<string>('all');
@@ -62,7 +62,7 @@ export default function ProjectShowcase() {
                 px-5 py-2.5 text-xs font-bold uppercase tracking-wider rounded-full transition-all duration-200 cursor-pointer border
                 ${activeCategory === cat.id
                   ? 'bg-indigo-600 border-indigo-600 text-white dark:bg-indigo-600 dark:border-indigo-600 dark:text-white shadow-md'
-                  : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50 dark:bg-[#0a0a0b] dark:border-white/10 dark:text-slate-300 dark:hover:border-indigo-500/50 dark:hover:text-white'
+                  : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50 dark:bg-[#0a0a0b] dark:border-white/10 dark:text-slate-300'
                 }
               `}
             >
@@ -72,7 +72,7 @@ export default function ProjectShowcase() {
         </div>
 
         {/* Projects Grid Display */}
-        <div className="mt-14 grid gap-8 lg:grid-cols-2" id="projects-grid">
+        <div className={`mt-14 grid gap-8 ${filteredProjects.length === 1 ? 'lg:grid-cols-1' : 'lg:grid-cols-2'}`} id="projects-grid">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project: Project) => {
               const isExpanded = expandedProjectId === project.id;

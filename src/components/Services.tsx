@@ -1,6 +1,6 @@
 import { Layout, Cpu, Cloud, Check } from 'lucide-react';
-import { SERVICES } from '../data/portfolioData';
-import { Card, CardHeader, CardContent } from './ui/Card';
+import { SERVICES } from '@/src/data/portfolioData';
+import { Card, CardHeader, CardContent } from '@/src/components/ui/Card';
 
 const iconMap: { [key: string]: any } = {
   Layout: Layout,

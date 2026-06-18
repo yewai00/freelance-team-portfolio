@@ -1,15 +1,15 @@
 import { Github, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
-import { TEAM } from '../data/portfolioData';
-import { Card, CardContent } from './ui/Card';
+import { TEAM } from '@/src/data/portfolioData';
+import { Card, CardContent } from '@/src/components/ui/Card';
 
 // Real high-quality professional portrait assets from Unsplash
 const AVATAR_URLS: { [key: string]: string } = {
-  alex: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces&q=80',
-  marcus: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces&q=80',
-  elena: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces&q=80',
-  ye: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces&q=80',
+  pyae: '/assets/images/v1.jpg',
+  hayman: '/assets/images/v5.jpg',
+  arkar: '/assets/images/v2.jpg',
+  ye: '/assets/images/v3.jpg',
+  shweyee: '/assets/images/v6.jpg'
 };
-
 export default function Team() {
   return (
     <section id="team" className="relative py-20 bg-white dark:bg-transparent">

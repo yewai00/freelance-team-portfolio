@@ -1,4 +1,4 @@
-import { Service, TeamMember, Project, TechIcon } from '../types';
+import { Service, TeamMember, Project, TechIcon } from '@/src/types';
 
 export const SERVICES: Service[] = [
   {
@@ -46,96 +46,109 @@ export const SERVICES: Service[] = [
 ];
 
 export const TEAM: TeamMember[] = [
+
   {
+    id: 'pyae',
+    name: 'Pyae Sone Aung',
+    role: 'Software Engineer',
+    bio: 'Specialist in Next.js, React, and front-end design systems. Alex translates artistic UI mockups into performant, elegant codebases with robust client states.',
+    github: 'https://github.com/PyaeSone99',
+    linkedin: 'https://linkedin.com',
+    email: 'alex@devteam.io',
+    avatarSeed: 'pyae'
+  },
+  {
+    id: 'Hayman',
+    name: 'Hayman Lawon Htet',
+    role: 'Software Engineer',
+    bio: 'Deep systems engineer specializing in Java, Spring Boot, Postgres performance tuning, and scalable API gateways. Former tech lead for multi-million transaction enterprise applications.',
+    github: 'https://github.com/hmlwh07',
+    linkedin: 'https://linkedin.com',
+    email: 'marcus@devteam.io',
+    avatarSeed: 'hayman'
+  },
+  {
+    id: 'Arkar',
+    name: 'Arkar Nyein',
+    role: 'Software Engineer',
+    bio: 'Kubernetes wizard, cloud solutions architect, and automation expert. Elena builds self-healing infrastructure, immutable pipelines, and resilient multi-region server arrays.',
+    github: 'https://github.com/Arkar48',
+    linkedin: 'https://linkedin.com',
+    email: 'elena@devteam.io',
+    avatarSeed: 'arkar'
+  },
+    {
     id: 'Ye',
     name: 'Ye Wai',
     role: 'Software Engineer',
     bio: 'Specialist in Next.js, React, and front-end design systems. Ye translates creative user interfaces into highly performant, accessible web experiences.',
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
-    email: 'ye@devteam.io',
+    github: 'https://github.com/yewai00',
+    linkedin: 'https://www.linkedin.com/in/ye-wai/',
+    email: 'yewai.cs@gmail.com',
     avatarSeed: 'ye'
   },
   {
-    id: 'alex',
-    name: 'Alex Rivera',
-    role: 'Senior Full-Stack Engineer',
-    bio: 'Specialist in Next.js, React, and front-end design systems. Alex translates artistic UI mockups into performant, elegant codebases with robust client states.',
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
-    email: 'alex@devteam.io',
-    avatarSeed: 'alex'
-  },
-  {
-    id: 'marcus',
-    name: 'Marcus Chen',
-    role: 'Core Systems Architect',
-    bio: 'Deep systems engineer specializing in Java, Spring Boot, Postgres performance tuning, and scalable API gateways. Former tech lead for multi-million transaction enterprise applications.',
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
-    email: 'marcus@devteam.io',
-    avatarSeed: 'marcus'
-  },
-  {
-    id: 'elena',
-    name: 'Elena Rostova',
-    role: 'Cloud & DevOps Lead',
+    id: 'Shwe Yee',
+    name: 'Shwe Yee Myint',
+    role: 'Software Engineer',
     bio: 'Kubernetes wizard, cloud solutions architect, and automation expert. Elena builds self-healing infrastructure, immutable pipelines, and resilient multi-region server arrays.',
-    github: 'https://github.com',
+    github: 'https://github.com/ShweYeeK16',
     linkedin: 'https://linkedin.com',
     email: 'elena@devteam.io',
-    avatarSeed: 'elena'
+    avatarSeed: 'shweyee'
   }
 ];
 
 export const PROJECTS: Project[] = [
+  // {
+  //   id: 'nexpay',
+  //   title: 'NexPay High-Throughput Broker',
+  //   client: 'NexPay Global',
+  //   summary: 'A secure, thread-safe financial API gateway scaling dynamically to broker microsecond transaction signals.',
+  //   problem: 'The client faced transactional packet loss and severe latency spikes (averaging 480ms) during high-frequency market openings.',
+  //   solution: 'Designed and deployed a highly concurrent Java 21 & Spring Boot cluster utilizing dynamic pooled Redis caching, reactive WebClient channels, and database connection tuning.',
+  //   techStack: ['Spring Boot 3', 'Java 21', 'Redis', 'PostgreSQL', 'Docker', 'AWS ECS'],
+  //   successMetric: 'API latency optimized by 42% (under 25ms consistent response) with zero packet drop rates.',
+  //   category: 'fintech'
+  // },
   {
-    id: 'nexpay',
-    title: 'NexPay High-Throughput Broker',
-    client: 'NexPay Global',
-    summary: 'A secure, thread-safe financial API gateway scaling dynamically to broker microsecond transaction signals.',
-    problem: 'The client faced transactional packet loss and severe latency spikes (averaging 480ms) during high-frequency market openings.',
-    solution: 'Designed and deployed a highly concurrent Java 21 & Spring Boot cluster utilizing dynamic pooled Redis caching, reactive WebClient channels, and database connection tuning.',
-    techStack: ['Spring Boot 3', 'Java 21', 'Redis', 'PostgreSQL', 'Docker', 'AWS ECS'],
-    successMetric: 'API latency optimized by 42% (under 25ms consistent response) with zero packet drop rates.',
-    category: 'fintech'
-  },
-  {
-    id: 'aura',
-    title: 'Aura Headless Commerce Engine',
-    client: 'Aura Apparel LLC',
-    summary: 'A rapid headless storefront featuring instant search indexing, real-time inventory synchronizations, and server page compiles.',
-    problem: 'Existing legacy systems took up to 5.2 seconds for paint loading on mobile, resulting in massive cart abandonment.',
-    solution: 'Engineered a clean Next.js App Router setup with incremental static regeneration, custom micro-services, and full Tailwind CSS styling.',
-    techStack: ['Next.js 15', 'React 19', 'Tailwind CSS', 'GraphQL', 'Vercel', 'PostgreSQL'],
-    successMetric: 'LCP page loading speed brought down to 0.72 seconds, boosting checkout conversions by +34%.',
+    id: 'SanYonnNana',
+    title: 'Book Store',
+    client: 'San Yonn Nana (အိမ်မက်စာဖတ်ခရီး)',
+    summary: 'An integrated e-commerce platform featuring a modern customer storefront and a secure administrative dashboard for seamless inventory management.',
+    problem: 'The absence of a unified digital platform complicated manual inventory tracking and prevented customers from securely browsing and purchasing books online.',
+    solution: 'Architected a robust dual-portal application using Spring Boot (Java 21) for scalable backend APIs and PostgreSQL for secure, relational data storage. The frontend leverages Angular, TypeScript, and Tailwind CSS to deliver responsive, authenticated interfaces with strict role-based access control for both shoppers and administrators.',
+    techStack: ['Angular', 'Spring boot', 'Tailwind CSS', 'PostgreSQL', 'TypeScript', 'Java 21'],
+    successMetric: 'Successfully launched a centralized digital storefront with seamless role-based authentication, streamlining both customer purchases and administrative inventory workflows.',
     category: 'web'
   },
-  {
-    id: 'helix',
-    title: 'Helix Real-Time Analytics Portal',
-    client: 'Helix BioSystems',
-    summary: 'A multi-tenant streaming dashboard feeding live telemetry metrics from clinical sensory equipment with millisecond precision.',
-    problem: 'Telemetry pipelines lagged by minutes because of unindexed heavy SQL querying on time-series records.',
-    solution: 'Set up an isolated time-series TimescaleDB engine bridged with event-driven WebSockets and active React render throttling, ensuring steady rates of updates.',
-    techStack: ['React', 'Node.js', 'TimescaleDB', 'TypeScript', 'WebSockets', 'Kubernetes'],
-    successMetric: 'Ingests 5,000,000+ data coordinates daily with active browser renderings rendering under 1.5% CPU overload.',
-    category: 'enterprise'
-  },
-  {
-    id: 'cybershield',
-    title: 'CyberShield HIPAA Exchange',
-    client: 'CyberShield Health',
-    summary: 'An encrypted electronic medical records (EMR) system bridging diagnostic facilities with high security compliance protocols.',
-    problem: 'Strict European and US healthcare transfer mandates prohibited cloud storage of plain-text patient profiles.',
-    solution: 'Built a zero-trust Java 21 microservice architecture featuring column-level AES-256 GCM encryption, audited ledger flows, and multi-factor OAuth 2.0 tokens.',
-    techStack: ['Spring Security 6', 'Java 21', 'Spring Boot 3', 'OAuth 2.0', 'GCP Secret Manager'],
-    successMetric: 'Passed dynamic and static external penetration testing 100% on the first audit run, securing HIPAA compliance.',
-    category: 'cloud'
-  }
+  // {
+  //   id: 'helix',
+  //   title: 'Helix Real-Time Analytics Portal',
+  //   client: 'Helix BioSystems',
+  //   summary: 'A multi-tenant streaming dashboard feeding live telemetry metrics from clinical sensory equipment with millisecond precision.',
+  //   problem: 'Telemetry pipelines lagged by minutes because of unindexed heavy SQL querying on time-series records.',
+  //   solution: 'Set up an isolated time-series TimescaleDB engine bridged with event-driven WebSockets and active React render throttling, ensuring steady rates of updates.',
+  //   techStack: ['React', 'Node.js', 'TimescaleDB', 'TypeScript', 'WebSockets', 'Kubernetes'],
+  //   successMetric: 'Ingests 5,000,000+ data coordinates daily with active browser renderings rendering under 1.5% CPU overload.',
+  //   category: 'enterprise'
+  // },
+  // {
+  //   id: 'cybershield',
+  //   title: 'CyberShield HIPAA Exchange',
+  //   client: 'CyberShield Health',
+  //   summary: 'An encrypted electronic medical records (EMR) system bridging diagnostic facilities with high security compliance protocols.',
+  //   problem: 'Strict European and US healthcare transfer mandates prohibited cloud storage of plain-text patient profiles.',
+  //   solution: 'Built a zero-trust Java 21 microservice architecture featuring column-level AES-256 GCM encryption, audited ledger flows, and multi-factor OAuth 2.0 tokens.',
+  //   techStack: ['Spring Security 6', 'Java 21', 'Spring Boot 3', 'OAuth 2.0', 'GCP Secret Manager'],
+  //   successMetric: 'Passed dynamic and static external penetration testing 100% on the first audit run, securing HIPAA compliance.',
+  //   category: 'cloud'
+  // }
 ];
 
 export const TECH_STACK: TechIcon[] = [
+  { name: 'Angular', category: 'frontend'},
+  { name: 'Flutter', category: 'mobile'},
   { name: 'Next.js', category: 'frontend' },
   { name: 'React 19', category: 'frontend' },
   { name: 'TypeScript', category: 'frontend' },
@@ -150,6 +163,5 @@ export const TECH_STACK: TechIcon[] = [
   { name: 'AWS', category: 'cloud' },
   { name: 'Google Cloud', category: 'cloud' },
   { name: 'Framer Motion', category: 'frontend' },
-  { name: 'GraphQL', category: 'backend' },
   { name: 'Git & Actions', category: 'tool' }
 ];

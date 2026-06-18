@@ -4,12 +4,12 @@ import {
 } from 'lucide-react';
 import { FaJava, FaAws } from 'react-icons/fa';
 import { 
-  SiJavascript, SiFlutter, SiAndroid, SiKotlin, SiKubernetes, SiDocker, SiGit, SiReact, SiAngular, SiDigitalocean, SiSpring, SiHtml5, SiCss
+  SiJavascript, SiFlutter, SiAndroid, SiKotlin, SiKubernetes, SiDocker, SiGit, SiReact, SiAngular, SiDigitalocean, SiSpring, SiHtml5, SiCss, SiVite, SiWordpress
 } from 'react-icons/si';
 
 const ICON_COMPONENTS = [
   Cpu, Code2, Network, Database, Cloud, Server, Shield, Terminal, Blocks, Braces, Binary,
-  FaJava, FaAws, SiJavascript, SiFlutter, SiAndroid, SiKotlin, SiKubernetes, SiDocker, SiGit, SiReact, SiAngular, SiDigitalocean, SiSpring, SiHtml5, SiCss
+  FaJava, FaAws, SiJavascript, SiFlutter, SiAndroid, SiKotlin, SiKubernetes, SiDocker, SiGit, SiReact, SiAngular, SiDigitalocean, SiSpring, SiHtml5, SiCss, SiVite, SiWordpress
 ];
 
 interface Particle {
